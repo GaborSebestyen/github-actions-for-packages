@@ -1,10 +1,8 @@
 #Workflow build the repo code, runs tests and creates a docker image
-name: Docker CD
+name: Node CI
 
-on:
-  push:
-    paths:
-      - "**Dockerfile**"
+on: [push]
+  
 jobs:
   build:
     runs-on: ubuntu-latest
